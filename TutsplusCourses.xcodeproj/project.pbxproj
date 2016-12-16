@@ -24,6 +24,12 @@
 		9012DB881E03EC690093379B /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB591E03E9AB0093379B /* Ride.swift */; };
 		9012DB891E03EC690093379B /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB5B1E03E9B40093379B /* Driver.swift */; };
 		9012DB8A1E03EC690093379B /* FakeRides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB5F1E03EA080093379B /* FakeRides.swift */; };
+		9012DB8D1E03ED800093379B /* Ride+Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB8C1E03ED800093379B /* Ride+Intent.swift */; };
+		9012DB8F1E03ED9C0093379B /* Driver+Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB8E1E03ED9C0093379B /* Driver+Intent.swift */; };
+		9012DB911E03EDA90093379B /* UIImage+Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB901E03EDA90093379B /* UIImage+Intent.swift */; };
+		9012DB921E03EDCE0093379B /* Ride+Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB8C1E03ED800093379B /* Ride+Intent.swift */; };
+		9012DB931E03EDCE0093379B /* Driver+Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB8E1E03ED9C0093379B /* Driver+Intent.swift */; };
+		9012DB941E03EDCE0093379B /* UIImage+Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB901E03EDA90093379B /* UIImage+Intent.swift */; };
 		905DC4421E03DE05001B9B8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905DC4411E03DE05001B9B8B /* AppDelegate.swift */; };
 		905DC4441E03DE05001B9B8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905DC4431E03DE05001B9B8B /* ViewController.swift */; };
 		905DC4471E03DE05001B9B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905DC4451E03DE05001B9B8B /* Main.storyboard */; };
@@ -89,6 +95,9 @@
 		9012DB781E03EB590093379B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9012DB851E03EB860093379B /* RideRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideRequestHandler.swift; sourceTree = "<group>"; };
 		9012DB8B1E03ECAC0093379B /* TutsplusCourses.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TutsplusCourses.entitlements; sourceTree = "<group>"; };
+		9012DB8C1E03ED800093379B /* Ride+Intent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ride+Intent.swift"; sourceTree = "<group>"; };
+		9012DB8E1E03ED9C0093379B /* Driver+Intent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Driver+Intent.swift"; sourceTree = "<group>"; };
+		9012DB901E03EDA90093379B /* UIImage+Intent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Intent.swift"; sourceTree = "<group>"; };
 		905DC43E1E03DE05001B9B8B /* TutsplusCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutsplusCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		905DC4411E03DE05001B9B8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		905DC4431E03DE05001B9B8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				9012DB5D1E03E9E20093379B /* CLLocation+Random.swift */,
+				9012DB8C1E03ED800093379B /* Ride+Intent.swift */,
+				9012DB8E1E03ED9C0093379B /* Driver+Intent.swift */,
+				9012DB901E03EDA90093379B /* UIImage+Intent.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -388,11 +400,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9012DB891E03EC690093379B /* Driver.swift in Sources */,
+				9012DB921E03EDCE0093379B /* Ride+Intent.swift in Sources */,
 				9012DB871E03EC690093379B /* CLLocation+Random.swift in Sources */,
 				9012DB8A1E03EC690093379B /* FakeRides.swift in Sources */,
 				9012DB881E03EC690093379B /* Ride.swift in Sources */,
 				9012DB861E03EB860093379B /* RideRequestHandler.swift in Sources */,
 				9012DB681E03EB590093379B /* IntentHandler.swift in Sources */,
+				9012DB941E03EDCE0093379B /* UIImage+Intent.swift in Sources */,
+				9012DB931E03EDCE0093379B /* Driver+Intent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,11 +424,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				905DC4441E03DE05001B9B8B /* ViewController.swift in Sources */,
+				9012DB8D1E03ED800093379B /* Ride+Intent.swift in Sources */,
 				905DC4421E03DE05001B9B8B /* AppDelegate.swift in Sources */,
 				9012DB601E03EA080093379B /* FakeRides.swift in Sources */,
 				9012DB5E1E03E9E20093379B /* CLLocation+Random.swift in Sources */,
 				9012DB5A1E03E9AB0093379B /* Ride.swift in Sources */,
 				9012DB5C1E03E9B40093379B /* Driver.swift in Sources */,
+				9012DB911E03EDA90093379B /* UIImage+Intent.swift in Sources */,
+				9012DB8F1E03ED9C0093379B /* Driver+Intent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
