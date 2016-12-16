@@ -781,6 +781,7 @@
 				CODE_SIGN_ENTITLEMENTS = TutsplusCourses/TutsplusCourses.entitlements;
 				DEVELOPMENT_TEAM = 3KXQPZ8HAZ;
 				INFOPLIST_FILE = TutsplusCourses/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mmuehlberger.TutsplusCourses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -796,6 +797,7 @@
 				CODE_SIGN_ENTITLEMENTS = TutsplusCourses/TutsplusCourses.entitlements;
 				DEVELOPMENT_TEAM = 3KXQPZ8HAZ;
 				INFOPLIST_FILE = TutsplusCourses/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mmuehlberger.TutsplusCourses;
 				PRODUCT_NAME = "$(TARGET_NAME)";

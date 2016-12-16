@@ -10,11 +10,10 @@ import Intents
 
 public extension Driver {
     public var rideIntentDriver : INRideDriver {
-        return INRideDriver(personHandle: INPersonHandle(value: name, type: .unknown),
+        return INRideDriver(phoneNumber: "no phone",
                             nameComponents: .none,
                             displayName: name,
                             image: image.inImage,
-                            rating: rating.toString,
-                            phoneNumber: .none)
+                            rating: rating.toString)
     }
 }
