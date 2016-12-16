@@ -7,12 +7,29 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var mapView: MKMapView!
+    var fakeRides : FakeRides?
+    var annotations = [Ride : MKAnnotation]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        mapView.delegate = self
+        fakeRides = FakeRides()
+        
+        mapView.setRegion(MKCoordinateRegionMakeWithDistance(vienna.coordinate, 7_500, 7_500), animated: false)
+        
+        fakeRides?.rides.forEach { (ride) in
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = ride.location.coordinate
+            annotation.title = ride.driver.name
+            
+            annotations[ride] = annotation
+            mapView.addAnnotation(annotation)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,3 +51,22 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController : MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let annotationView : MKAnnotationView
+        
+        if let view = mapView.dequeueReusableAnnotationView(withIdentifier: "rides") {
+            annotationView = view
+        } else {
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "rides")
+        }
+        
+        let ride = annotations.filter { (_, a) in
+            return a.title! == annotation.title!
+            }.first!.key
+        
+        annotationView.image = ride.image
+        
+        return annotationView
+    }
+}

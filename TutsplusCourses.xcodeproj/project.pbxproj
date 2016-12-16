@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9012DB4E1E03E4EA0093379B /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9012DB4D1E03E4EA0093379B /* Stickers.xcassets */; };
 		9012DB521E03E4EA0093379B /* CodeStickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9012DB4B1E03E4EA0093379B /* CodeStickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9012DB5A1E03E9AB0093379B /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB591E03E9AB0093379B /* Ride.swift */; };
+		9012DB5C1E03E9B40093379B /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB5B1E03E9B40093379B /* Driver.swift */; };
+		9012DB5E1E03E9E20093379B /* CLLocation+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB5D1E03E9E20093379B /* CLLocation+Random.swift */; };
+		9012DB601E03EA080093379B /* FakeRides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB5F1E03EA080093379B /* FakeRides.swift */; };
 		905DC4421E03DE05001B9B8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905DC4411E03DE05001B9B8B /* AppDelegate.swift */; };
 		905DC4441E03DE05001B9B8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905DC4431E03DE05001B9B8B /* ViewController.swift */; };
 		905DC4471E03DE05001B9B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905DC4451E03DE05001B9B8B /* Main.storyboard */; };
@@ -44,6 +48,10 @@
 		9012DB4B1E03E4EA0093379B /* CodeStickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CodeStickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9012DB4D1E03E4EA0093379B /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		9012DB4F1E03E4EA0093379B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9012DB591E03E9AB0093379B /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		9012DB5B1E03E9B40093379B /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		9012DB5D1E03E9E20093379B /* CLLocation+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Random.swift"; sourceTree = "<group>"; };
+		9012DB5F1E03EA080093379B /* FakeRides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeRides.swift; sourceTree = "<group>"; };
 		905DC43E1E03DE05001B9B8B /* TutsplusCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutsplusCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		905DC4411E03DE05001B9B8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		905DC4431E03DE05001B9B8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +81,23 @@
 			path = CodeStickers;
 			sourceTree = "<group>";
 		};
+		9012DB571E03E9850093379B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9012DB591E03E9AB0093379B /* Ride.swift */,
+				9012DB5B1E03E9B40093379B /* Driver.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9012DB581E03E98B0093379B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9012DB5D1E03E9E20093379B /* CLLocation+Random.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		905DC4351E03DE04001B9B8B = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +119,11 @@
 		905DC4401E03DE05001B9B8B /* TutsplusCourses */ = {
 			isa = PBXGroup;
 			children = (
+				9012DB581E03E98B0093379B /* Extensions */,
+				9012DB571E03E9850093379B /* Models */,
 				905DC4411E03DE05001B9B8B /* AppDelegate.swift */,
 				905DC4431E03DE05001B9B8B /* ViewController.swift */,
+				9012DB5F1E03EA080093379B /* FakeRides.swift */,
 				905DC4451E03DE05001B9B8B /* Main.storyboard */,
 				905DC4481E03DE05001B9B8B /* Assets.xcassets */,
 				905DC44A1E03DE05001B9B8B /* LaunchScreen.storyboard */,
@@ -208,6 +236,10 @@
 			files = (
 				905DC4441E03DE05001B9B8B /* ViewController.swift in Sources */,
 				905DC4421E03DE05001B9B8B /* AppDelegate.swift in Sources */,
+				9012DB601E03EA080093379B /* FakeRides.swift in Sources */,
+				9012DB5E1E03E9E20093379B /* CLLocation+Random.swift in Sources */,
+				9012DB5A1E03E9AB0093379B /* Ride.swift in Sources */,
+				9012DB5C1E03E9B40093379B /* Driver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
