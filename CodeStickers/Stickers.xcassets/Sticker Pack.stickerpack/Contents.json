@@ -1,0 +1,188 @@
+{
+  "stickers" : [
+    {
+      "filename" : "anchor.sticker"
+    },
+    {
+      "filename" : "aperture.sticker"
+    },
+    {
+      "filename" : "arrow-down.sticker"
+    },
+    {
+      "filename" : "arrow-up.sticker"
+    },
+    {
+      "filename" : "art.sticker"
+    },
+    {
+      "filename" : "barchart.sticker"
+    },
+    {
+      "filename" : "batteryfull.sticker"
+    },
+    {
+      "filename" : "batterylow.sticker"
+    },
+    {
+      "filename" : "bike.sticker"
+    },
+    {
+      "filename" : "biker.sticker"
+    },
+    {
+      "filename" : "bikewheel.sticker"
+    },
+    {
+      "filename" : "blimp.sticker"
+    },
+    {
+      "filename" : "bolt.sticker"
+    },
+    {
+      "filename" : "bomb.sticker"
+    },
+    {
+      "filename" : "booklet.sticker"
+    },
+    {
+      "filename" : "bookshelf.sticker"
+    },
+    {
+      "filename" : "briefcase.sticker"
+    },
+    {
+      "filename" : "brightness.sticker"
+    },
+    {
+      "filename" : "browser.sticker"
+    },
+    {
+      "filename" : "brush-pencil.sticker"
+    },
+    {
+      "filename" : "calculator.sticker"
+    },
+    {
+      "filename" : "calendar.sticker"
+    },
+    {
+      "filename" : "camera.sticker"
+    },
+    {
+      "filename" : "car.sticker"
+    },
+    {
+      "filename" : "cart.sticker"
+    },
+    {
+      "filename" : "carwheel.sticker"
+    },
+    {
+      "filename" : "caution.sticker"
+    },
+    {
+      "filename" : "chat.sticker"
+    },
+    {
+      "filename" : "check.sticker"
+    },
+    {
+      "filename" : "circlecompass.sticker"
+    },
+    {
+      "filename" : "clapboard.sticker"
+    },
+    {
+      "filename" : "clipboard.sticker"
+    },
+    {
+      "filename" : "clock.sticker"
+    },
+    {
+      "filename" : "cloud.sticker"
+    },
+    {
+      "filename" : "cmyk.sticker"
+    },
+    {
+      "filename" : "colorwheel.sticker"
+    },
+    {
+      "filename" : "compass.sticker"
+    },
+    {
+      "filename" : "compose.sticker"
+    },
+    {
+      "filename" : "computer.sticker"
+    },
+    {
+      "filename" : "cone.sticker"
+    },
+    {
+      "filename" : "contacts.sticker"
+    },
+    {
+      "filename" : "contrast.sticker"
+    },
+    {
+      "filename" : "countdown.sticker"
+    },
+    {
+      "filename" : "creditcard.sticker"
+    },
+    {
+      "filename" : "crop.sticker"
+    },
+    {
+      "filename" : "crossroads.sticker"
+    },
+    {
+      "filename" : "cruise.sticker"
+    },
+    {
+      "filename" : "cursor.sticker"
+    },
+    {
+      "filename" : "denied.sticker"
+    },
+    {
+      "filename" : "dev.sticker"
+    },
+    {
+      "filename" : "die.sticker"
+    },
+    {
+      "filename" : "document.sticker"
+    },
+    {
+      "filename" : "dolly.sticker"
+    },
+    {
+      "filename" : "door.sticker"
+    },
+    {
+      "filename" : "download.sticker"
+    },
+    {
+      "filename" : "easel.sticker"
+    },
+    {
+      "filename" : "email.sticker"
+    },
+    {
+      "filename" : "eye.sticker"
+    },
+    {
+      "filename" : "eyedropper.sticker"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  }
+}
