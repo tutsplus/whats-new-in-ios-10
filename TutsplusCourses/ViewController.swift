@@ -21,7 +21,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func generateHapticFeedback(_ sender: Any) {
+        //        let feedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
+        //        feedbackGenerator.prepare()
+        //
+        //        feedbackGenerator.impactOccurred()
         
+        //        let feedbackGenerator = UINotificationFeedbackGenerator()
+        //        feedbackGenerator.notificationOccurred(.error)
+        
+        let feedbackGenerator = UISelectionFeedbackGenerator()
+        feedbackGenerator.selectionChanged()
     }
 }
 
