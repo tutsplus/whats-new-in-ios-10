@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import UserNotifications
 
 class ViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
@@ -42,7 +43,24 @@ class ViewController: UIViewController {
         let subtitle = "What a great surprise"
         let body = "Go ahead and congratulate her to that special day."
         
+        let attachment = try! UNNotificationAttachment(identifier: person, url: imageUrl!, options: .none)
         
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.subtitle = subtitle
+        content.attachments = [attachment]
+        content.body = body
+        content.categoryIdentifier = "birthdayNotificationCategory"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: randomDelay - randomDelay + 1, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: person, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) { (error) in
+            if let error = error {
+                print(error)
+            }
+        }
     }
     
 

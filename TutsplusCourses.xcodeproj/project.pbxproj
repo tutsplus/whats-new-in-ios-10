@@ -35,6 +35,14 @@
 		905DC4471E03DE05001B9B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905DC4451E03DE05001B9B8B /* Main.storyboard */; };
 		905DC4491E03DE05001B9B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905DC4481E03DE05001B9B8B /* Assets.xcassets */; };
 		905DC44C1E03DE05001B9B8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905DC44A1E03DE05001B9B8B /* LaunchScreen.storyboard */; };
+		90F1ED941E03EFB100A167B7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F1ED931E03EFB100A167B7 /* UserNotifications.framework */; };
+		90F1ED961E03EFB100A167B7 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F1ED951E03EFB100A167B7 /* UserNotificationsUI.framework */; };
+		90F1ED991E03EFB100A167B7 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F1ED981E03EFB100A167B7 /* NotificationViewController.swift */; };
+		90F1ED9C1E03EFB100A167B7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F1ED9A1E03EFB100A167B7 /* MainInterface.storyboard */; };
+		90F1EDA01E03EFB100A167B7 /* BirthdaysNotifications.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 90F1ED921E03EFB100A167B7 /* BirthdaysNotifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90F1EDA71E03EFFB00A167B7 /* Cornelia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90F1EDA41E03EFFB00A167B7 /* Cornelia.jpg */; };
+		90F1EDA81E03EFFB00A167B7 /* Maria.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90F1EDA51E03EFFB00A167B7 /* Maria.jpg */; };
+		90F1EDA91E03EFFB00A167B7 /* Sarah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90F1EDA61E03EFFB00A167B7 /* Sarah.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +67,13 @@
 			remoteGlobalIDString = 9012DB641E03EB590093379B;
 			remoteInfo = RideIntent;
 		};
+		90F1ED9E1E03EFB100A167B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 905DC4361E03DE04001B9B8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90F1ED911E03EFB100A167B7;
+			remoteInfo = BirthdaysNotifications;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +83,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				90F1EDA01E03EFB100A167B7 /* BirthdaysNotifications.appex in Embed App Extensions */,
 				9012DB7B1E03EB590093379B /* RideIntentUI.appex in Embed App Extensions */,
 				9012DB7E1E03EB590093379B /* RideIntent.appex in Embed App Extensions */,
 				9012DB521E03E4EA0093379B /* CodeStickers.appex in Embed App Extensions */,
@@ -105,6 +121,15 @@
 		905DC4481E03DE05001B9B8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		905DC44B1E03DE05001B9B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		905DC44D1E03DE05001B9B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F1ED921E03EFB100A167B7 /* BirthdaysNotifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BirthdaysNotifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F1ED931E03EFB100A167B7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		90F1ED951E03EFB100A167B7 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		90F1ED981E03EFB100A167B7 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		90F1ED9B1E03EFB100A167B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		90F1ED9D1E03EFB100A167B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F1EDA41E03EFFB00A167B7 /* Cornelia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cornelia.jpg; sourceTree = "<group>"; };
+		90F1EDA51E03EFFB00A167B7 /* Maria.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Maria.jpg; sourceTree = "<group>"; };
+		90F1EDA61E03EFFB00A167B7 /* Sarah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sarah.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +152,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90F1ED8F1E03EFB100A167B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F1ED961E03EFB100A167B7 /* UserNotificationsUI.framework in Frameworks */,
+				90F1ED941E03EFB100A167B7 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				9012DB701E03EB590093379B /* IntentsUI.framework */,
+				90F1ED931E03EFB100A167B7 /* UserNotifications.framework */,
+				90F1ED951E03EFB100A167B7 /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,6 +233,7 @@
 				9012DB4C1E03E4EA0093379B /* CodeStickers */,
 				9012DB661E03EB590093379B /* RideIntent */,
 				9012DB721E03EB590093379B /* RideIntentUI */,
+				90F1ED971E03EFB100A167B7 /* BirthdaysNotifications */,
 				9012DB6F1E03EB590093379B /* Frameworks */,
 				905DC43F1E03DE05001B9B8B /* Products */,
 			);
@@ -209,6 +246,7 @@
 				9012DB4B1E03E4EA0093379B /* CodeStickers.appex */,
 				9012DB651E03EB590093379B /* RideIntent.appex */,
 				9012DB6E1E03EB590093379B /* RideIntentUI.appex */,
+				90F1ED921E03EFB100A167B7 /* BirthdaysNotifications.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,6 +257,7 @@
 				9012DB8B1E03ECAC0093379B /* TutsplusCourses.entitlements */,
 				9012DB581E03E98B0093379B /* Extensions */,
 				9012DB571E03E9850093379B /* Models */,
+				90F1EDAA1E03F00600A167B7 /* Images */,
 				905DC4411E03DE05001B9B8B /* AppDelegate.swift */,
 				905DC4431E03DE05001B9B8B /* ViewController.swift */,
 				9012DB5F1E03EA080093379B /* FakeRides.swift */,
@@ -228,6 +267,26 @@
 				905DC44D1E03DE05001B9B8B /* Info.plist */,
 			);
 			path = TutsplusCourses;
+			sourceTree = "<group>";
+		};
+		90F1ED971E03EFB100A167B7 /* BirthdaysNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				90F1ED981E03EFB100A167B7 /* NotificationViewController.swift */,
+				90F1ED9A1E03EFB100A167B7 /* MainInterface.storyboard */,
+				90F1ED9D1E03EFB100A167B7 /* Info.plist */,
+			);
+			path = BirthdaysNotifications;
+			sourceTree = "<group>";
+		};
+		90F1EDAA1E03F00600A167B7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				90F1EDA41E03EFFB00A167B7 /* Cornelia.jpg */,
+				90F1EDA51E03EFFB00A167B7 /* Maria.jpg */,
+				90F1EDA61E03EFFB00A167B7 /* Sarah.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,11 +356,29 @@
 				9012DB511E03E4EA0093379B /* PBXTargetDependency */,
 				9012DB7A1E03EB590093379B /* PBXTargetDependency */,
 				9012DB7D1E03EB590093379B /* PBXTargetDependency */,
+				90F1ED9F1E03EFB100A167B7 /* PBXTargetDependency */,
 			);
 			name = TutsplusCourses;
 			productName = TutsplusCourses;
 			productReference = 905DC43E1E03DE05001B9B8B /* TutsplusCourses.app */;
 			productType = "com.apple.product-type.application";
+		};
+		90F1ED911E03EFB100A167B7 /* BirthdaysNotifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90F1EDA31E03EFB100A167B7 /* Build configuration list for PBXNativeTarget "BirthdaysNotifications" */;
+			buildPhases = (
+				90F1ED8E1E03EFB100A167B7 /* Sources */,
+				90F1ED8F1E03EFB100A167B7 /* Frameworks */,
+				90F1ED901E03EFB100A167B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirthdaysNotifications;
+			productName = BirthdaysNotifications;
+			productReference = 90F1ED921E03EFB100A167B7 /* BirthdaysNotifications.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -335,6 +412,11 @@
 							};
 						};
 					};
+					90F1ED911E03EFB100A167B7 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 3KXQPZ8HAZ;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 905DC4391E03DE04001B9B8B /* Build configuration list for PBXProject "TutsplusCourses" */;
@@ -354,6 +436,7 @@
 				9012DB4A1E03E4EA0093379B /* CodeStickers */,
 				9012DB641E03EB590093379B /* RideIntent */,
 				9012DB6D1E03EB590093379B /* RideIntentUI */,
+				90F1ED911E03EFB100A167B7 /* BirthdaysNotifications */,
 			);
 		};
 /* End PBXProject section */
@@ -386,9 +469,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F1EDA71E03EFFB00A167B7 /* Cornelia.jpg in Resources */,
 				905DC44C1E03DE05001B9B8B /* LaunchScreen.storyboard in Resources */,
+				90F1EDA81E03EFFB00A167B7 /* Maria.jpg in Resources */,
+				90F1EDA91E03EFFB00A167B7 /* Sarah.jpg in Resources */,
 				905DC4491E03DE05001B9B8B /* Assets.xcassets in Resources */,
 				905DC4471E03DE05001B9B8B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90F1ED901E03EFB100A167B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F1ED9C1E03EFB100A167B7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +529,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90F1ED8E1E03EFB100A167B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F1ED991E03EFB100A167B7 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -452,6 +554,11 @@
 			isa = PBXTargetDependency;
 			target = 9012DB641E03EB590093379B /* RideIntent */;
 			targetProxy = 9012DB7C1E03EB590093379B /* PBXContainerItemProxy */;
+		};
+		90F1ED9F1E03EFB100A167B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90F1ED911E03EFB100A167B7 /* BirthdaysNotifications */;
+			targetProxy = 90F1ED9E1E03EFB100A167B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -478,6 +585,14 @@
 				905DC44B1E03DE05001B9B8B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		90F1ED9A1E03EFB100A167B7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90F1ED9B1E03EFB100A167B7 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -688,6 +803,34 @@
 			};
 			name = Release;
 		};
+		90F1EDA11E03EFB100A167B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3KXQPZ8HAZ;
+				INFOPLIST_FILE = BirthdaysNotifications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmuehlberger.TutsplusCourses.BirthdaysNotifications;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		90F1EDA21E03EFB100A167B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3KXQPZ8HAZ;
+				INFOPLIST_FILE = BirthdaysNotifications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmuehlberger.TutsplusCourses.BirthdaysNotifications;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -698,6 +841,7 @@
 				9012DB541E03E4EA0093379B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9012DB7F1E03EB590093379B /* Build configuration list for PBXNativeTarget "RideIntentUI" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +850,7 @@
 				9012DB811E03EB590093379B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9012DB821E03EB590093379B /* Build configuration list for PBXNativeTarget "RideIntent" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +859,7 @@
 				9012DB841E03EB590093379B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		905DC4391E03DE04001B9B8B /* Build configuration list for PBXProject "TutsplusCourses" */ = {
 			isa = XCConfigurationList;
@@ -732,6 +878,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		90F1EDA31E03EFB100A167B7 /* Build configuration list for PBXNativeTarget "BirthdaysNotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90F1EDA11E03EFB100A167B7 /* Debug */,
+				90F1EDA21E03EFB100A167B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
