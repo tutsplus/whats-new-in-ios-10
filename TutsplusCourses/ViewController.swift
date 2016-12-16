@@ -31,11 +31,20 @@ class ViewController: UIViewController {
             mapView.addAnnotation(annotation)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    @IBAction func scheduleBirthdayNotification(_ sender: Any) {
+        let randomDelay = Double(arc4random_uniform(10))
+        let people = ["Maria", "Sarah", "Cornelia"]
+        let person = people[Int(arc4random_uniform(UInt32(people.count)))]
+        let imageUrl = Bundle.main.url(forResource: person, withExtension: "jpg")
+        let title = "\(person) has her birthday today!"
+        let subtitle = "What a great surprise"
+        let body = "Go ahead and congratulate her to that special day."
+        
+        
     }
+    
 
     @IBAction func generateHapticFeedback(_ sender: Any) {
         //        let feedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)

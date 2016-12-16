@@ -8,15 +8,17 @@
 
 import UIKit
 import Intents
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         requestAuthorization()
+        configureNotifications()
         return true
     }
     
@@ -28,6 +30,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("Authorization to Siri was denied")
             }
         }
+    }
+    
+    private func configureNotifications() {
+        UNUserNotificationCenter.current().delegate = self
+//        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+//            if let error = error {
+//                print(error)
+//            }
+//        }
+
+        // TODO
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler(.alert)
     }
 
 }
