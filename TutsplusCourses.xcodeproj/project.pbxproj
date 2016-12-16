@@ -13,6 +13,17 @@
 		9012DB5C1E03E9B40093379B /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB5B1E03E9B40093379B /* Driver.swift */; };
 		9012DB5E1E03E9E20093379B /* CLLocation+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB5D1E03E9E20093379B /* CLLocation+Random.swift */; };
 		9012DB601E03EA080093379B /* FakeRides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB5F1E03EA080093379B /* FakeRides.swift */; };
+		9012DB681E03EB590093379B /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB671E03EB590093379B /* IntentHandler.swift */; };
+		9012DB711E03EB590093379B /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9012DB701E03EB590093379B /* IntentsUI.framework */; };
+		9012DB741E03EB590093379B /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB731E03EB590093379B /* IntentViewController.swift */; };
+		9012DB771E03EB590093379B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9012DB751E03EB590093379B /* MainInterface.storyboard */; };
+		9012DB7B1E03EB590093379B /* RideIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9012DB6E1E03EB590093379B /* RideIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9012DB7E1E03EB590093379B /* RideIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9012DB651E03EB590093379B /* RideIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9012DB861E03EB860093379B /* RideRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB851E03EB860093379B /* RideRequestHandler.swift */; };
+		9012DB871E03EC690093379B /* CLLocation+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB5D1E03E9E20093379B /* CLLocation+Random.swift */; };
+		9012DB881E03EC690093379B /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB591E03E9AB0093379B /* Ride.swift */; };
+		9012DB891E03EC690093379B /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB5B1E03E9B40093379B /* Driver.swift */; };
+		9012DB8A1E03EC690093379B /* FakeRides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012DB5F1E03EA080093379B /* FakeRides.swift */; };
 		905DC4421E03DE05001B9B8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905DC4411E03DE05001B9B8B /* AppDelegate.swift */; };
 		905DC4441E03DE05001B9B8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905DC4431E03DE05001B9B8B /* ViewController.swift */; };
 		905DC4471E03DE05001B9B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905DC4451E03DE05001B9B8B /* Main.storyboard */; };
@@ -28,6 +39,20 @@
 			remoteGlobalIDString = 9012DB4A1E03E4EA0093379B;
 			remoteInfo = CodeStickers;
 		};
+		9012DB791E03EB590093379B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 905DC4361E03DE04001B9B8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9012DB6D1E03EB590093379B;
+			remoteInfo = RideIntentUI;
+		};
+		9012DB7C1E03EB590093379B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 905DC4361E03DE04001B9B8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9012DB641E03EB590093379B;
+			remoteInfo = RideIntent;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +62,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				9012DB7B1E03EB590093379B /* RideIntentUI.appex in Embed App Extensions */,
+				9012DB7E1E03EB590093379B /* RideIntent.appex in Embed App Extensions */,
 				9012DB521E03E4EA0093379B /* CodeStickers.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -52,6 +79,16 @@
 		9012DB5B1E03E9B40093379B /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		9012DB5D1E03E9E20093379B /* CLLocation+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Random.swift"; sourceTree = "<group>"; };
 		9012DB5F1E03EA080093379B /* FakeRides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeRides.swift; sourceTree = "<group>"; };
+		9012DB651E03EB590093379B /* RideIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RideIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9012DB671E03EB590093379B /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		9012DB691E03EB590093379B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9012DB6E1E03EB590093379B /* RideIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RideIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9012DB701E03EB590093379B /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		9012DB731E03EB590093379B /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		9012DB761E03EB590093379B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9012DB781E03EB590093379B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9012DB851E03EB860093379B /* RideRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideRequestHandler.swift; sourceTree = "<group>"; };
+		9012DB8B1E03ECAC0093379B /* TutsplusCourses.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TutsplusCourses.entitlements; sourceTree = "<group>"; };
 		905DC43E1E03DE05001B9B8B /* TutsplusCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutsplusCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		905DC4411E03DE05001B9B8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		905DC4431E03DE05001B9B8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +99,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9012DB621E03EB590093379B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9012DB6B1E03EB590093379B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9012DB711E03EB590093379B /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		905DC43B1E03DE04001B9B8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,11 +150,42 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		9012DB661E03EB590093379B /* RideIntent */ = {
+			isa = PBXGroup;
+			children = (
+				9012DB671E03EB590093379B /* IntentHandler.swift */,
+				9012DB851E03EB860093379B /* RideRequestHandler.swift */,
+				9012DB691E03EB590093379B /* Info.plist */,
+			);
+			path = RideIntent;
+			sourceTree = "<group>";
+		};
+		9012DB6F1E03EB590093379B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9012DB701E03EB590093379B /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9012DB721E03EB590093379B /* RideIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				9012DB731E03EB590093379B /* IntentViewController.swift */,
+				9012DB751E03EB590093379B /* MainInterface.storyboard */,
+				9012DB781E03EB590093379B /* Info.plist */,
+			);
+			path = RideIntentUI;
+			sourceTree = "<group>";
+		};
 		905DC4351E03DE04001B9B8B = {
 			isa = PBXGroup;
 			children = (
 				905DC4401E03DE05001B9B8B /* TutsplusCourses */,
 				9012DB4C1E03E4EA0093379B /* CodeStickers */,
+				9012DB661E03EB590093379B /* RideIntent */,
+				9012DB721E03EB590093379B /* RideIntentUI */,
+				9012DB6F1E03EB590093379B /* Frameworks */,
 				905DC43F1E03DE05001B9B8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +195,8 @@
 			children = (
 				905DC43E1E03DE05001B9B8B /* TutsplusCourses.app */,
 				9012DB4B1E03E4EA0093379B /* CodeStickers.appex */,
+				9012DB651E03EB590093379B /* RideIntent.appex */,
+				9012DB6E1E03EB590093379B /* RideIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +204,7 @@
 		905DC4401E03DE05001B9B8B /* TutsplusCourses */ = {
 			isa = PBXGroup;
 			children = (
+				9012DB8B1E03ECAC0093379B /* TutsplusCourses.entitlements */,
 				9012DB581E03E98B0093379B /* Extensions */,
 				9012DB571E03E9850093379B /* Models */,
 				905DC4411E03DE05001B9B8B /* AppDelegate.swift */,
@@ -150,6 +236,40 @@
 			productReference = 9012DB4B1E03E4EA0093379B /* CodeStickers.appex */;
 			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
 		};
+		9012DB641E03EB590093379B /* RideIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9012DB821E03EB590093379B /* Build configuration list for PBXNativeTarget "RideIntent" */;
+			buildPhases = (
+				9012DB611E03EB590093379B /* Sources */,
+				9012DB621E03EB590093379B /* Frameworks */,
+				9012DB631E03EB590093379B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RideIntent;
+			productName = RideIntent;
+			productReference = 9012DB651E03EB590093379B /* RideIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9012DB6D1E03EB590093379B /* RideIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9012DB7F1E03EB590093379B /* Build configuration list for PBXNativeTarget "RideIntentUI" */;
+			buildPhases = (
+				9012DB6A1E03EB590093379B /* Sources */,
+				9012DB6B1E03EB590093379B /* Frameworks */,
+				9012DB6C1E03EB590093379B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RideIntentUI;
+			productName = RideIntentUI;
+			productReference = 9012DB6E1E03EB590093379B /* RideIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		905DC43D1E03DE04001B9B8B /* TutsplusCourses */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 905DC4501E03DE05001B9B8B /* Build configuration list for PBXNativeTarget "TutsplusCourses" */;
@@ -163,6 +283,8 @@
 			);
 			dependencies = (
 				9012DB511E03E4EA0093379B /* PBXTargetDependency */,
+				9012DB7A1E03EB590093379B /* PBXTargetDependency */,
+				9012DB7D1E03EB590093379B /* PBXTargetDependency */,
 			);
 			name = TutsplusCourses;
 			productName = TutsplusCourses;
@@ -175,17 +297,31 @@
 		905DC4361E03DE04001B9B8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Markus Mühlberger";
 				TargetAttributes = {
 					9012DB4A1E03E4EA0093379B = {
 						CreatedOnToolsVersion = 8.2;
 						ProvisioningStyle = Automatic;
 					};
+					9012DB641E03EB590093379B = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					9012DB6D1E03EB590093379B = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
 					905DC43D1E03DE04001B9B8B = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3KXQPZ8HAZ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -204,6 +340,8 @@
 			targets = (
 				905DC43D1E03DE04001B9B8B /* TutsplusCourses */,
 				9012DB4A1E03E4EA0093379B /* CodeStickers */,
+				9012DB641E03EB590093379B /* RideIntent */,
+				9012DB6D1E03EB590093379B /* RideIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +352,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				9012DB4E1E03E4EA0093379B /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9012DB631E03EB590093379B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9012DB6C1E03EB590093379B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9012DB771E03EB590093379B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +383,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9012DB611E03EB590093379B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9012DB891E03EC690093379B /* Driver.swift in Sources */,
+				9012DB871E03EC690093379B /* CLLocation+Random.swift in Sources */,
+				9012DB8A1E03EC690093379B /* FakeRides.swift in Sources */,
+				9012DB881E03EC690093379B /* Ride.swift in Sources */,
+				9012DB861E03EB860093379B /* RideRequestHandler.swift in Sources */,
+				9012DB681E03EB590093379B /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9012DB6A1E03EB590093379B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9012DB741E03EB590093379B /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		905DC43A1E03DE04001B9B8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,9 +425,27 @@
 			target = 9012DB4A1E03E4EA0093379B /* CodeStickers */;
 			targetProxy = 9012DB501E03E4EA0093379B /* PBXContainerItemProxy */;
 		};
+		9012DB7A1E03EB590093379B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9012DB6D1E03EB590093379B /* RideIntentUI */;
+			targetProxy = 9012DB791E03EB590093379B /* PBXContainerItemProxy */;
+		};
+		9012DB7D1E03EB590093379B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9012DB641E03EB590093379B /* RideIntent */;
+			targetProxy = 9012DB7C1E03EB590093379B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9012DB751E03EB590093379B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9012DB761E03EB590093379B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		905DC4451E03DE05001B9B8B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -299,6 +491,62 @@
 			};
 			name = Release;
 		};
+		9012DB801E03EB590093379B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = RideIntentUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmuehlberger.TutsplusCourses.RideIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9012DB811E03EB590093379B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = RideIntentUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmuehlberger.TutsplusCourses.RideIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9012DB831E03EB590093379B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = RideIntent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmuehlberger.TutsplusCourses.RideIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9012DB841E03EB590093379B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = RideIntent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmuehlberger.TutsplusCourses.RideIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		905DC44E1E03DE05001B9B8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -317,6 +565,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -366,6 +615,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -393,7 +643,10 @@
 		905DC4511E03DE05001B9B8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TutsplusCourses/TutsplusCourses.entitlements;
+				DEVELOPMENT_TEAM = 3KXQPZ8HAZ;
 				INFOPLIST_FILE = TutsplusCourses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mmuehlberger.TutsplusCourses;
@@ -405,7 +658,10 @@
 		905DC4521E03DE05001B9B8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TutsplusCourses/TutsplusCourses.entitlements;
+				DEVELOPMENT_TEAM = 3KXQPZ8HAZ;
 				INFOPLIST_FILE = TutsplusCourses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mmuehlberger.TutsplusCourses;
@@ -422,6 +678,22 @@
 			buildConfigurations = (
 				9012DB531E03E4EA0093379B /* Debug */,
 				9012DB541E03E4EA0093379B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9012DB7F1E03EB590093379B /* Build configuration list for PBXNativeTarget "RideIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9012DB801E03EB590093379B /* Debug */,
+				9012DB811E03EB590093379B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9012DB821E03EB590093379B /* Build configuration list for PBXNativeTarget "RideIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9012DB831E03EB590093379B /* Debug */,
+				9012DB841E03EB590093379B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
